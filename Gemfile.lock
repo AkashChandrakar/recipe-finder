@@ -87,6 +87,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.19.0)
     phantomjs (1.9.8.0)
     pkg-config (1.1.7)
     poltergeist (1.6.0)
@@ -178,6 +179,7 @@ DEPENDENCIES
   httparty
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   phantomjs (~> 1.9.8.0)
   poltergeist (~> 1.6.0)
   rails (= 4.2.3)
