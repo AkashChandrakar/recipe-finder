@@ -1,9 +1,10 @@
-== Recipies FInder
+#Recipies Finder
 
 This app allows you to search for favourite recipie
 The app uses the [food2fork API](http://food2fork.com/about/api).
 
-User Story
+##User Story
+
 ---
 
 * If I go to root url I will get a set of default recipies
