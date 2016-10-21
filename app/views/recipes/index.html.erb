@@ -1,0 +1,21 @@
+<h1>Recipes#index</h1>
+<table border="1" class="the-center">
+    <th>thumbnail</th>
+    <th>title</th>
+    <th>social rank</th>
+    <% @recipes.each do |recipe|  %>
+    <tr>
+        <td>
+            <%= link_to(recipe['f2f_url']) do %>
+               <%= image_tag(recipe['image_url'], :alt => "recipe image",:height => "100", :width => "100") %>
+            <% end %>
+        </td>
+        <td class="the-center"> 
+                <%= link_to(recipe['f2f_url']) do %>
+                    <%= sanitize recipe['title'] %> 
+                <% end %>
+        </td>
+        <td class="the-center"> <%= recipe['social_rank'].to_s[0..4] %>  </td>
+    </tr>
+    <% end %>
+</table>
